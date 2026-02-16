@@ -8,6 +8,7 @@ import requests
 
 
 def push_qmsg(all_logs: list[str]):
+    print("===== QMSG FUNCTION LOADED =====")
     # === QMSG 推送（可选，通过环境变量控制） ===
     # 在本地或 GitHub Actions 设置：
     #   QMSG_TOKEN: 必填
@@ -38,4 +39,5 @@ def push_qmsg(all_logs: list[str]):
     except Exception as e:
 
         logging.error("qmsg推送失败", exc_info=e)
+
 

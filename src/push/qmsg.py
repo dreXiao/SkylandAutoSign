@@ -18,7 +18,7 @@ def push_qmsg(all_logs: list[str]):
     bot = os.environ.get('BOT', '').strip()
     if not token:
         return
-    
+    logging.info("加载了qmsg")
     title = f'森空岛自动签到结果 - {date.today().strftime("%Y-%m-%d")}'
     desp = '\n'.join(all_logs) if all_logs else '今日无可用账号或无输出'
     api = f"https://qmsg.zendee.cn/jsend/{token}" #私聊
@@ -35,4 +35,5 @@ def push_qmsg(all_logs: list[str]):
         if not ok:
             logging.error(f"qmsg推送失败,http代码{r.status_code},{r.text}")
     except Exception as e:
+
         logging.error("qmsg推送失败", exc_info=e)

@@ -21,6 +21,7 @@ def load_config_to_env():
                 # 将配置项添加到环境变量中
                 env_key = option.upper()  # 转换为大写作为环境变量名
                 if value:  # 只有当值不为空时才设置环境变量
+                    print("has changed")
                     os.environ[env_key] = value
 
 # 加载配置到环境变量
@@ -41,3 +42,4 @@ def push(all_logs: list[str]):
         except Exception as e:
             logging.error(f"[Push] {k}时出现问题", exc_info=e)
     logging.info("推送结束")
+

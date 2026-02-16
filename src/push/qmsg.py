@@ -17,7 +17,7 @@ def push_qmsg(all_logs: list[str]):
     token = os.environ.get('QMSG_TOKEN', '').strip()
     qq = os.environ.get('QQ', '').strip()
     bot = os.environ.get('BOT', '').strip()
-    logging.info(f"尝试调用qmsg，bot为{bot}")
+    logging.info(f"尝试调用qmsg，token={token},qq={qq},bot={bot},原始变量为{os.environ.get('QMSG_TOKEN', '').strip()}{os.environ.get('QQ', '').strip()}{os.environ.get('BOT', '').strip()}")
     if not token:
         return
     logging.info("加载了qmsg")
@@ -39,5 +39,6 @@ def push_qmsg(all_logs: list[str]):
     except Exception as e:
 
         logging.error("qmsg推送失败", exc_info=e)
+
 
 

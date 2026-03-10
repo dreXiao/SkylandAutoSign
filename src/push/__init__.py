@@ -2,10 +2,10 @@ import logging
 import os
 from configparser import ConfigParser
 
-from napcat import push_napcat
-from pushplus import push_pushplus
-from qmsg import push_qmsg
-from serverchan3 import push_serverchan3
+from .napcat import push_napcat
+from .pushplus import push_pushplus
+from .qmsg import push_qmsg
+from .serverchan3 import push_serverchan3
 
 # 定义可用的推送服务及其对应的函数
 __available_pusher = {
@@ -49,3 +49,4 @@ def push(all_logs):
         except Exception as e:
             print(f"[Push] {k}时出现问题: {str(e)}")
     logging.info("推送结束")
+

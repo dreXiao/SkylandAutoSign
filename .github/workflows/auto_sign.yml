@@ -27,9 +27,11 @@ jobs:
           TOKEN: ${{ secrets.TOKEN }}
           SC3_SENDKEY: ${{ secrets.SC3_SENDKEY }}
           SC3_UID: ${{ secrets.SC3_UID }}
+          NAPCAT_TOKEN: ${{ secrets.NAPCAT_TOKEN }}
           QMSG_TOKEN: ${{ secrets.QMSG_TOKEN }}
           QQ: ${{ secrets.QQ }}
           BOT: ${{ secrets.BOT }}
+          GROUP_ID: ${{ secrets.GROUP_ID }}
           EXIT_WHEN_FAIL: ${{ vars.EXIT_WHEN_FAIL }}
         run: |
           python src/main.py

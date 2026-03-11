@@ -1,6 +1,6 @@
 # skyland-auto-sign
 
-**[原项目](https://github.com/zhengjc866/SkylandAutoSign)**
+**[原项目](https://gitee.com/FancyCabbage/skyland-auto-sign)**
 明日方舟森空岛一键签到脚本，基于python
 
 有三种方法部署
@@ -270,3 +270,4 @@ SC3_UID（可选）: 若不填会从SC3_SENDKEY自动解析。（形如 12345）
 
 
 现已解决，具体实现看`SecuritySm.py`文件
+

@@ -1,5 +1,6 @@
 # skyland-auto-sign
 
+**[原项目](https://github.com/zhengjc866/SkylandAutoSign)**
 明日方舟森空岛一键签到脚本，基于python
 
 有三种方法部署
@@ -266,5 +267,6 @@ SC3_UID（可选）: 若不填会从SC3_SENDKEY自动解析。（形如 12345）
 ## 有关新版本获得Cred必传的dId参数
 
 2024.9.10 森空岛登入接口引入了数美接口，请求头必须传递dId参数，导致无法正常登陆
+
 
 现已解决，具体实现看`SecuritySm.py`文件

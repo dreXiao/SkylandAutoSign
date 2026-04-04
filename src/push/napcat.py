@@ -18,7 +18,7 @@ def push_napcat(all_logs: list[str]):
     title = f"运行结果 - {date.today().strftime('%Y-%m-%d')}"
     desp = "\n".join(all_logs) if all_logs else "无输出，请检查日志文件。"
     message = f"{title}\n{desp}"
-    api = "http://139.129.25.129:3000/send_msg"
+    api = "https://api.napcat.noyoru.top/send_msg"
     if napcat_token:
         headers = {
             "Content-Type": "application/json",

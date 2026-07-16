@@ -1,6 +1,7 @@
 # skyland-auto-sign
 
-**[原项目](https://gitee.com/FancyCabbage/skyland-auto-sign)**
+**[原项目](https://gitee.com/FancyCabbage/skyland-auto-sign)**二次开发
+为保持repo活跃，防止action失效，将有周期地更新readme
 明日方舟森空岛一键签到脚本，基于python
 
 有三种方法部署

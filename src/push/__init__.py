@@ -2,7 +2,7 @@ import logging
 import os
 from configparser import ConfigParser
 
-from .napcat import push_napcat
+from .onebot11_customized.py import push_onebot11
 from .pushplus import push_pushplus
 from .qmsg import push_qmsg
 from .serverchan3 import push_serverchan3

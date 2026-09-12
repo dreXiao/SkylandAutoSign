@@ -12,7 +12,7 @@ __available_pusher = {
     'serverchan3': push_serverchan3,
     'pushplus': push_pushplus,
     'QMSG': push_qmsg,
-    'napcat': push_napcat,
+    'onebot11': push_onebot11,
 }
 
 

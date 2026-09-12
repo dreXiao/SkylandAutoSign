@@ -6,7 +6,7 @@ from datetime import date
 import requests
 
 
-def push_napcat(all_logs: list[str]):
+def push_onebot11(all_logs: list[str]):
     """
     Napcat
     """
